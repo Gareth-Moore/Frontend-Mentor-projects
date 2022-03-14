@@ -1,0 +1,8 @@
+What's up with the desktop-preview.jpg ? are we supposed to do that one too because I have no background image for it.
+
+learned:
+favicon
+single dot means current directory eg ./images/picofgrandma.jpg
+hsl (hue saturation lightness) color format
+collapsing margins - using overflow:, borders or padding
+organizing my ccs file - using Typography, Layout and components etc.

@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+/*=============
+  Typography
+  =============*/
+
+.qr_text {
+  width: 83%;
+  margin: 1.5rem auto;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: hsl(218, 44%, 22%);
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: hsl(220, 15%, 55%);
+}
+
+
+/*=============
+  Layout
+  =============*/
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212, 45%, 89%);
+}
+
+main {
+  border: 1px solid white;
+  width: 340px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/*=============
+  Components
+  =============*/
+
+img {
+  display: block;
+  width: 90%;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
