@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  color: hsl(215, 51%, 70%);
+  font-family: 'Outfit', sans-serif;
+}
+
+/* ==========
+  Typography
+  ==========*/
+
+.equilibrium-name {
+  color: white;
+  margin-top: 1.7rem;
+  margin-bottom: .5rem;
+}
+.equilibrium-name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  text-shadow: 0px 0px 5px white;
+}
+
+.equilibrium-value {
+  color: hsl(178, 100%, 50%);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.equilibrium-expiration {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.equilibrium-description {
+  line-height: 1.8rem;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.author-name {
+  color: white;
+}
+.author-name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  text-shadow: 0px 0px 5px white;
+
+}
+
+.card-text {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.container-value-expiration {
+  display: flex;
+  justify-content: space-between;
+}
+
+.credit {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1.6rem .8rem 1.8rem 0.8rem;
+  font-weight: 300;
+
+}
+
+/* ==========
+  Layout
+  ==========*/
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+main {
+  margin: 0;
+  width: 340px;
+  background-color: hsl(216, 50%, 16%);
+  border: 1px solid hsl(216, 50%, 16%);
+  border-radius: 10px;
+}
+main:hover {
+  transition: 0.5s ease;
+  box-shadow: 0 0 7px hsl(215, 51%, 70%);
+}
+
+.preview-image {
+  width: 86%;
+  background-color: hsl(178, 100%, 50%);
+  position: relative;
+  margin: 1.45rem auto;
+  border-radius: 10px;
+}
+
+
+
+
+/* ==========
+  Components
+  ==========*/
+
+.svg-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .3rem;
+}
+
+.svg-preview-icon {
+  transition: 0.8s ease;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right:50%;
+  transform: translate(50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.preview-image:hover .svg-preview-icon {
+  opacity: 1;
+}
+.preview-image:hover .equilibrium-image {
+  opacity: 0.5;
+}
+
+hr {
+  border: none;
+  background: hsl(215, 32%, 27%);
+  height: 0.01rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.avatar-image {
+  width: 2.3rem;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.equilibrium-image {
+  opacity: 1;
+  transition: 0.8s ease;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.equilibrium-image:hover {
+  cursor: pointer;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.5;
+}

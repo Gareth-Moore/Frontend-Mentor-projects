@@ -5,3 +5,9 @@ Notes for NFT preview card component
 Your challenge is to build out this preview card component and get it looking as close to the design as possible.
 
 Start here:
+Learned that you need border: none; background: red; height: 1px; to style an <hr> element
+Started using a lot more descriptive classes
+Used vertical-align to vert. center svg with p elements
+Simply changing the contrast of a line can make it appear thicker or thinner
+Adding mouse pointers (when hovering)
+I went through all the bullshit of showing an svg and changing the background of an image when I hover over it. It I had to put the img and svg in a div. Then give the div a background color, opacity. Then give the svg absolte positioning, opacity 0, top/bottom, transform: translate. Just to get it working! Jesus what a mission but it's done!
