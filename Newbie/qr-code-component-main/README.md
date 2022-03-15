@@ -1,3 +1,5 @@
+./desktopview.png
+
 # Frontend Mentor - QR code component solution
 
 Author - Gareth Moore https://www.frontendmentor.io/profile/Gareth-Moore
