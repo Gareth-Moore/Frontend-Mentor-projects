@@ -1,4 +1,4 @@
-(./desktopview.png)
+![Desktop view of completed project.](./desktopview.png)
 
 # Frontend Mentor - QR code component solution
 
