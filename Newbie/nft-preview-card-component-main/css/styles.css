@@ -3,66 +3,69 @@
   color: hsl(215, 51%, 70%);
   font-family: 'Outfit', sans-serif;
 }
+html {
+  font-size: 62.5%;
+}
 
 /* ==========
   Typography
   ==========*/
 
-.equilibrium-name {
-  color: white;
-  margin-top: 1.7rem;
-  margin-bottom: .5rem;
+p {
+  font-size: 1.6rem;
 }
-.equilibrium-name:hover {
+
+.go-back {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.6rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.title {
+  color: white;
+  font-size: 2.4rem;
+  margin-top: 2.72rem;
+  margin-bottom: .8rem;
+}
+.title:hover {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
-  text-shadow: 0px 0px 5px white;
+  text-shadow: 0 0 0.2rem white;
 }
 
-.equilibrium-value {
-  color: hsl(178, 100%, 50%);
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.equilibrium-expiration {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.equilibrium-description {
-  line-height: 1.8rem;
+.description {
+  line-height: 2.88rem;
   margin-bottom: 0;
   font-weight: 300;
 }
 
-.author-name {
-  color: white;
-}
-.author-name:hover {
-  color: hsl(178, 100%, 50%);
-  cursor: pointer;
-  text-shadow: 0px 0px 5px white;
-
-}
-
-.card-text {
-  width: 86%;
-  margin: 0 auto;
-}
-
-.container-value-expiration {
-  display: flex;
-  justify-content: space-between;
-}
-
-.credit {
+.nft-expiration,
+.nft-value,
+.artist-credit {
   display: inline-block;
   vertical-align: middle;
-  margin: 1.6rem .8rem 1.8rem 0.8rem;
-  font-weight: 300;
-
 }
+
+.nft-value {
+  color: hsl(178, 100%, 50%);
+}
+
+.artist-credit {
+  margin: 2.56rem 1.28rem 2.56rem 1.28rem;
+  font-weight: 300;
+}
+
+.artist-name {
+  color: white;
+}
+.artist-name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  text-shadow: 0 0 .3rem white;
+}
+
 
 /* ==========
   Layout
@@ -77,83 +80,92 @@ body {
   background-color: hsl(217, 54%, 11%);
 }
 
-main {
+.card {
   margin: 0;
-  width: 340px;
+  max-width: 34rem;
   background-color: hsl(216, 50%, 16%);
-  border: 1px solid hsl(216, 50%, 16%);
-  border-radius: 10px;
+  border: 0.1rem solid hsl(216, 50%, 16%);
+  border-radius: 1rem;
 }
-main:hover {
-  transition: 0.5s ease;
-  box-shadow: 0 0 7px hsl(215, 51%, 70%);
+.card:hover {
+  transition: 0.3s ease;
+  box-shadow: 0 0 .3rem hsl(215, 51%, 70%);
 }
 
-.preview-image {
+.card-image-div {
   width: 86%;
   background-color: hsl(178, 100%, 50%);
   position: relative;
-  margin: 1.45rem auto;
-  border-radius: 10px;
+  margin: 2.32rem auto;
+  border-radius: 1rem;
 }
 
+.card-body {
+  width: 86%;
+  margin: 0 auto;
+}
 
+.container-value-expiration {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 /* ==========
   Components
   ==========*/
 
-.svg-icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: .3rem;
-}
-
-.svg-preview-icon {
-  transition: 0.8s ease;
-  opacity: 0;
-  display: block;
-  position: absolute;
-  top: 50%;
-  right:50%;
-  transform: translate(50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  z-index: 1;
-}
-.preview-image:hover .svg-preview-icon {
-  opacity: 1;
-}
-.preview-image:hover .equilibrium-image {
-  opacity: 0.5;
-}
-
 hr {
-  border: none;
-  background: hsl(215, 32%, 27%);
-  height: 0.01rem;
+  border-color: hsl(215, 32%, 27%);
   margin-bottom: 0;
   margin-top: 0;
 }
 
-.avatar-image {
-  width: 2.3rem;
-  display: inline-block;
-  vertical-align: middle;
-  border: 1px solid white;
-  border-radius: 100%;
-}
-
-.equilibrium-image {
-  opacity: 1;
-  transition: 0.8s ease;
+.card-image {
   display: block;
+  position: relative;
+  transition: 0.8s ease;
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
-.equilibrium-image:hover {
+.card-image:hover {
   cursor: pointer;
-  background-color: hsl(178, 100%, 50%);
-  opacity: 0.5;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  opacity: .5;
+}
+.card-image-div:hover .svg-card-image-preview {
+  opacity: 1;
+  z-index: 1;
+}
+
+.svg-card-image-preview {
+  display: block;
+  position: absolute;
+  transition: 0.8s ease;
+  opacity: 0;
+  top: 50%;
+  right:50%;
+  transform: translate(50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.svg-icon,
+.artist-avatar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.svg-icon {
+  margin-right: .48rem;
+}
+
+.artist-avatar {
+  width: 3.68rem;
+  border: .2rem solid hsl(215, 32%, 27%);
+  border-radius: 100%;
+}
+.artist-avatar:hover {
+  transform: scale(1.3,1.3);
+  transition: .2s ease-in-out;
 }

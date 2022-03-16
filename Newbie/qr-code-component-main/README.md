@@ -8,18 +8,23 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 # Table of contents
 
-- overview
-  - screenshot
-  - links
-- my-process
-  - built-with
-  - what-I-learned
-  - continued-development
-  - useful-resources
-- author
-- acknowledgments
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 # Overview
+
+## The challenge
+
+To recreate the QR code card using HTML and CSS.
 
 ## Screenshot
 Mobile view - ./mobileview.png

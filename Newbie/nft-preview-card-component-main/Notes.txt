@@ -1,0 +1,20 @@
+Notes for NFT preview card component
+
+## The challenge
+
+Your challenge is to build out this preview card component and get it looking as close to the design as possible.
+
+Start here:
+The <hr> element is actually using the border property to make the line. So if you want to change the color of the line you need to change the background color (you have to give it a height because the default height is 0)
+Started using a lot more descriptive classes
+Used vertical-align to vert. center svg with p elements
+Simply changing the contrast of a line can make it appear thicker or thinner
+You can add an svg via <img src="location">
+Adding mouse pointers (when hovering) with cursor:
+I went through all the bullshit of showing an svg and changing the background of an image when I hover over it. It I had to put the img and svg in a div. Then give the div a background color, opacity. Then give the svg absolte positioning, opacity 0, top/bottom, transform: translate. Just to get it working! Jesus what a mission but it's done!
+Transitions, using opactity, transistion: 1s ease-in;
+Refactoring practice
+z-index works in conjunction with positon. Be care there are different stacks for z-index. If you aren't getting anywhere with z-index it may be that you need to apply a positon: to the element.
+Using font-size: 62.5%; to make 1 rem = 10px. Quite nice. I like it. You can also set base font size to 1.6 rem to normalize the font sizes otherwise all fonts are smaller.
+Being an idiot and thinking something is not working when you simply did not save changes to your html
+Learned that detecting page zoom levels is a convoluted mess of a subject
