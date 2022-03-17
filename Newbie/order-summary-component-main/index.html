@@ -2,42 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Frontend Mentor | Order Summary Card</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- navigate back to root index website -->
+  <!-- navigate back to root index of website -->
   <nav>
     <a href="../../index.html" class="go-back">Back</a>
   </nav>
 
   <!-- Order summary card -->
-  <main>
-    <img src="images/illustration-hero.svg" alt="A banner image of a someone enjoying music with a city background.">
-    <h1>
+  <main class="card">
+    <!-- card banner image -->
+    <img class="card-img" src="images/illustration-hero.svg" alt="A banner image of a someone enjoying music with a city background.">
+
+    <!-- card title and description -->
+    <h1 class="card-title">
       Order Summary
     </h1>
-    <p>
+    <p class="card-description">
       You can now listen to millions of songs, audiobooks, and podcasts on any
       device anywhere you like!
     </p>
-    <div class="container-payment-scheme">
-      <div class="payment-plan-amount">
-        Annual Plan
-        $59.99/year
+
+    <!-- card payment plan -->
+    <div class="container-payment">
+      <img src="images/icon-music.svg" alt="A music icon." class="item-payment-img">
+      <div class="item-payment-p">
+        <p>Annual Plan</p>
+        <p>$59.99/year</p>
       </div>
-      <a href="#">Change</a>
+      <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" class="item-payment-link">Change</a>
     </div>
+
+    <!-- card buttons -->
     <div class="card-btns">
       <button type="button" name="proceed" class="proceed-btn">Proceed to Payment</button>
       <button type="button" name="cancel" class="cancel-btn">Cancel Order</button>
     </div>
-
-</main>
+  </main>
 </body>
 </html>

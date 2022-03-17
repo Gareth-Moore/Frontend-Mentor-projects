@@ -1,28 +1,158 @@
-/* #
-- Mobile: 375px
-- Desktop: 1440px
-
-### Primary
-- Pale blue: hsl(225, 100%, 94%)
-- Bright blue: hsl(245, 75%, 52%)
-
-### Neutral
-- Very pale blue: hsl(225, 100%, 98%)
-- Desaturated blue: hsl(224, 23%, 55%)
-- Dark blue: hsl(223, 47%, 23%)
-
-- Font size (paragraph): 16px
-- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
-- Weights: 500, 700, 900
-*/
-
 /* overriding defaults */
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
+  font-family: 'Red Hat Display', sans-serif;
+  color: hsl(223, 47%, 23%);
 }
 body {
   font-size: 1.6rem;
+  margin: 0;
 }
+
+/* ==========
+  TYPOGRAPHY
+========== */
+
+.go-back {
+  font-size: 1.6rem;
+  color: hsl(223, 47%, 23%);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.card-title {
+  font-size: 2.3rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 2.5rem auto -.5rem auto;
+}
+.card-description {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  line-height: 2.4rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.item-payment-p p {
+  font-size: 1.45rem;
+  margin: 0.2rem 0.2rem 0.2rem 2rem;
+}
+
+.item-payment-p p:first-child {
+  font-weight: 900;
+}
+
+.item-payment-p p:last-child {
+  color: hsl(224, 23%, 55%);
+}
+
+.item-payment-link {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #5142cf;
+  margin-left: auto;
+}
+.item-payment-link:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+
+/* ==========
+  LAYOUT
+========== */
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfe7fe;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.card {
+  max-width: 33rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0 1rem 2rem hsl(224, 23%, 55%, 0.3);
+}
+
+.container-payment {
+  width: 84%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5rem auto;
+  padding: 1.8rem 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #f8f9fe;
+}
+
+/* ==========
+  COMPONENTS
+========== */
+
+.card-img {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.card-btns button {
+  letter-spacing: .02rem;
+  display: block;
+  width: 84%;
+  height: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 1rem;
+}
+
+.proceed-btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fbfcff;
+  margin-top: 2.2rem;
+  background-color: #382ae1;
+  box-shadow: 0 1.85rem 1.9rem #d9d8fa;
+}
+.proceed-btn:hover {
+  background-color: #766cf1;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  margin-top: 0.8rem;
+  margin-bottom: 2.2rem;
+  background-color: transparent;
+}
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+
+/* ==========
+  @MEDIA QUERIES
+========== */
+
+@media screen and (min-width: 376px){
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+  }
+}
+
+/* th-th-th-that's all folks */

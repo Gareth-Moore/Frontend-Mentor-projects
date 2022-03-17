@@ -1,6 +1,6 @@
 # Frontend Mentor - Order summary card solution
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -28,83 +28,74 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Mobile View](./mobileview.png)
+![Desktop View](./desktopview.png)
+![Desktop View - Hover States](./desktopview-hover-states.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+This project:
+
+https://gareth-moore.github.io/Frontend-Mentor-projects/Newbie/order-summary-component-main/index.html
+
+All my projects:
+
+https://gareth-moore.github.io/Frontend-Mentor-projects/
 
 ## My process
+
+I first start with organizing the task ahead. I figure out exactly what is required of me and set everything in order before I begin. I create the files, find the style guide and upload an initial repository to Github.
+
+Then I start with my HTML and get that as complete as I can. Including fonts, linking stylesheets, and all HTML elements needed. I include comments as I go along.
+
+When that is finished I start with styling. I work from the outside => in and top => bottom. If I can't go in I go down essentially. This means I start with the body and create the size and change the background. I then move on to the card itself and start with the banner image and end at the buttons at the bottom.
+
+I spend the better part of my life trying to fine tune the colors and measurements so I don't let down the OCD gods.
+
+Once everything is looking how I want it I quickly do the psuedoelements.
+
+Now the site is working and ready for refactoring. I go back and orgnize my code. I try to keep it organized as I work so this is generally quite a fun little task because I like to save bits here and there and in general make my code pretty, pellucid and optimized.
+
+Once that's done it's just some admin like taking screenshots and writing the readme. Then I post it on FEM and Slack for feedback!
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project didn't teach me many new things unfortunately. But it was nice to be at a level where I didn't really have to have my hand planted firmly up Google's @$$ while I work. But I do have a few honorable mentions:
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+- I found that I was much quicker at getting the task organized and ready to go than before.
+- I learned a little bit about first child in that:
+```CSS
+.myClass:first-child {}
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+Will not select the first child inside .myClass, or anything for that matter.
+You will have success if you specify the element you are trying to select. Such as the p element below:
+```CSS
+.myClass p:first-child {}
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- I struggled a lot eyeballing the colors from the demo pictures. I eventually started using GIMP to get the exact colors which immediately helped. It took the guess work out of the equation and I got to rest easy knowing the colors matched. **The colors in the style-guide didn't seem to have all the colors**
+- I definitely learned to focus on the tiny small details and appreciate them. In this project there were some super hard to see box-shadows that I had to replicate and that took some tinkering and a lot of patience to get right (Or at least in the same area code).
+- I learned a bit about time management. I can be a little OCD when it comes to making it look EXACTLY right. I need to be a little more focused on how long it is taking me. I can't get is perfect but I can get it basically the same. That's good enough. Move on and don't waste so much time stressing over minute details.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I've written about this a couple times now. Basically a few more FE mentor projects. When I am comfortable with HTML, CSS and JS then more on to React and all sorts of tech.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+I think I just used W3schools once to look up :first-child otherwise I was pretty much a lone ranger on this trip.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Gareth Moore](https://gareth-moore.github.io/Frontend-Mentor-projects/)
+- Frontend Mentor - [@Gareth-Moore](https://www.frontendmentor.io/profile/Gareth-Moore)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I would like to thank all the people and organizations that make material available online for free for people like me to use. Thank you Front End Mentor for providing this challenge for me, it is much appreciated!
