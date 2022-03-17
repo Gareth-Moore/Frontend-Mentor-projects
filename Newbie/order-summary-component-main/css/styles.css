@@ -153,6 +153,15 @@ body {
     background-image: url(../images/pattern-background-desktop.svg);
     background-size: contain;
   }
+  .card {
+    max-width: 36rem;
+  }
+  .card-title,
+  .card-description,
+  .container-payment,
+  .card-btns button {
+    max-width: 76%;
+  }
 }
 
 /* th-th-th-that's all folks */
