@@ -116,6 +116,7 @@ body {
 
 .image-mobile {
   max-width: 100%;
+  height: auto;
   display: block;
   filter: opacity(35%) contrast(20%);
 }
@@ -127,13 +128,14 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
+  overflow: hidden;
 }
 
 /* ==========
   @MEDIA QUERIES
 ========== */
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1138px) {
 
   /* ==========
     @MEDIA QUERIES - TYPOGRAPHY
@@ -201,6 +203,7 @@ body {
   .card-image {
     background-image: url(../images/image-header-desktop.jpg);
     border-radius: 0 .7rem .7rem 0;
+    overflow: visible;
   }
 
   .image-mobile {
