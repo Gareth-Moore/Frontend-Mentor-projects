@@ -1,0 +1,173 @@
+/*
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+Lexend Deca
+- Weights: 400
+
+Big Shoulders Display
+- Weights: 700
+*/
+
+
+/* ==========
+  DEFAULTS
+  ========== */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+  margin: 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+
+/* ==========
+  TYPOGRAPHY
+========== */
+
+.go-back-link {
+  color: hsl(179, 100%, 13%);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.title {
+  color: hsl(0, 0%, 95%);
+  font-size: 4rem;
+  font-family: 'Big Shoulders Display', sans-serif;
+  padding-top: .7rem;
+}
+
+.description {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2.4rem;
+  margin-top: -0.001rem;
+}
+
+.card-1 button {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-2 button {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-3 button {
+  color: hsl(179, 100%, 13%);
+}
+
+/* ==========
+  LAYOUT
+========== */
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container-cards {
+  max-width: 32.7rem;
+  margin: 8.65rem auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cards {
+  height: 44.25rem;
+  padding: 5rem 4.5rem 4.7rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-1 {
+  border-radius: 1rem 1rem 0 0;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  border-radius: 0 0 1rem 1rem;
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* ==========
+  COMPONENTS
+========== */
+
+img {
+  display: block;
+}
+
+.btn {
+  color: hsl(31, 77%, 51%);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: .05rem;
+  margin-top: auto;
+  padding: 1.4rem 2.6rem;
+  align-self: flex-start;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 2.5rem;
+  border-color: transparent;
+}
+
+/* ==========
+  @MEDIA QUERIES
+========== */
+
+@media screen and (min-width:1024px) {
+
+  /* ==========
+    @MEDIA QUERIES - LAYOUT
+  ========== */
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .container-cards {
+    max-width: calc(30.7rem * 3);
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cards {
+    height: 50rem;
+    max-width: calc(100%/3);
+  }
+
+  .card-1 {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .card-3 {
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  /* ==========
+    @MEDIA QUERIES - COMPONENTS
+  ========== */
+
+  button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: .22rem solid hsl(0, 0%, 95%);
+    cursor: pointer;
+  }
