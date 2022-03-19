@@ -97,7 +97,7 @@ body {
   background-color: hsl(178, 100%, 50%);
   position: relative;
   margin: 2.32rem auto;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
 }
 
 .card-body {
@@ -116,7 +116,7 @@ body {
   ==========*/
 
 hr {
-  border-color: hsl(215, 32%, 27%);
+  border-color: hsla(215, 51%, 70%, 0.72) transparent transparent transparent;
   margin-bottom: 0;
   margin-top: 0;
 }

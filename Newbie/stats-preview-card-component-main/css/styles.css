@@ -1,0 +1,217 @@
+/*
+hsl(233, 47%, 7%);
+hsl(244, 38%, 16%);
+hsl(277, 64%, 61%);
+hsl(0, 0%, 100%);
+hsla(0, 0%, 100%, 0.75);
+hsla(0, 0%, 100%, 0.6);
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+/* ==========
+  DEFAULTS
+  ========== */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* ==========
+  TYPOGRAPHY
+========== */
+
+.go-back-link {
+  color: hsl(277, 64%, 61%);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: hsl(0, 0%, 100%);
+  margin-top: 2.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 3.25rem;
+}
+
+.highlight {
+  color: hsl(277, 64%, 61%);
+}
+
+.description {
+  font-size: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  margin: 0 auto 4rem auto;
+  line-height: 2.55rem;
+}
+
+.container-stats h2 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 0rem;
+  margin-bottom: -.8rem;
+}
+
+.container-stats p {
+  font-size: 1.3rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.4);
+}
+
+.container-stats p:last-child {
+  margin-bottom: 2.9rem;
+}
+
+/* ==========
+  LAYOUT
+========== */
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.card {
+  max-width: 32.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 8.9rem auto;
+  border-radius: .7rem;
+  background-color: white;
+  background-color: hsl(244, 38%, 16%);
+}
+
+.card-body {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.card-body,
+.container-title-description,
+.container-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ }
+
+/* ==========
+  COMPONENTS
+========== */
+
+.image-desktop {
+  display: none;
+}
+
+.image-mobile {
+  max-width: 100%;
+  display: block;
+  filter: opacity(35%) contrast(20%);
+}
+
+.card-image {
+  border-radius: .7rem .7rem 0 0;
+  background-image: url(../images/image-header-mobile.jpg);
+  background-color: hsl(277, 100%, 63%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+/* ==========
+  @MEDIA QUERIES
+========== */
+
+@media screen and (min-width:1440px) {
+
+  /* ==========
+    @MEDIA QUERIES - TYPOGRAPHY
+  ========== */
+
+  .title {
+    font-size: 3.4rem;
+    margin: 0;
+    line-height: 4.2rem;
+    letter-spacing: .11rem;
+  }
+
+  /* span is the higlighted word */
+  .title span {
+     letter-spacing: .06rem;
+  }
+
+  .description {
+    padding-top: 2.9rem;
+  }
+
+  /* ==========
+    @MEDIA QUERIES - LAYOUT
+  ========== */
+
+  /* body flex container - to align card to middle of the screen */
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* flips card sideways and reverses flex direction */
+  .card {
+    max-width: 111rem;
+    height: 44.5rem;
+    flex-direction: row-reverse;
+  }
+
+  .card-body {
+    padding: 6.4rem 12rem 6.4rem 7.3rem;
+  }
+
+  .container-title-description {
+    text-align: left;
+  }
+
+  .container-stats {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 3rem;
+    text-align: left;
+  }
+
+  .stats-1,
+  .stats-2 {
+    margin-right: 6.5rem;
+  }
+
+  /* ==========
+    @MEDIA QUERIES - COMPONENTS
+  ========== */
+
+  .card-image {
+    background-image: url(../images/image-header-desktop.jpg);
+    border-radius: 0 .7rem .7rem 0;
+  }
+
+  .image-mobile {
+    display: none;
+  }
+
+  .image-desktop {
+    height: 100%;
+    display: block;
+    border-radius: 0 .7rem .7rem 0;
+    filter: opacity(35%) contrast(20%);
+  }
+}
+/* th-th-th-that's all folks */
