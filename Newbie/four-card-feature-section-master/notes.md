@@ -1,5 +1,5 @@
 Start here:
--
+- Didn't really learn as much as just practice what I know. 
 
 
 
