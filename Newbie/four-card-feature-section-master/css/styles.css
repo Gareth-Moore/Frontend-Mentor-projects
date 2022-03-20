@@ -10,7 +10,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
@@ -20,6 +20,7 @@ body {
   TYPOGRAPHY
 ========== */
 
+/* NAV LINKS */
 .front-end-mentor-link,
 .my-projects,
 .my-code {
@@ -41,38 +42,203 @@ body {
 
 .my-code {
   left: 23.587rem;
+} /* NAV LINKS */
+
+.header-title {
+  color: hsl(234, 12%, 34%);
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+
+.header-title strong {
+  font-weight: 600;
+}
+
+.header-description {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 8rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.card-title {
+  color: hsl(234, 12%, 34%);
+  letter-spacing: .015rem;
+  font-size: 2rem;
+  margin-bottom: -.8rem;
+  padding-top: 2.1rem;
+  padding-left: 2.65rem;
+}
+
+.card-description {
+  color: hsl(229, 6%, 66%);
+
+  padding-left: 2.82rem;
+  font-size: 1.2rem;
+  width: 90%;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  line-height: 2.3rem;
 }
 
 /* ==========
   LAYOUT
 ========== */
 
+body {
+  background-color: hsl(0, 0%, 98%);
+}
 
+.container {
+  width: 31rem;
+  margin: 8.3rem auto;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.cards {
+  background-color: white;
+  height: 21.8rem;
+  box-shadow:
+    1rem 1rem 1.5rem hsla(229, 64%, 66%, 0.1),
+    -1rem 1rem 1.5rem hsla(229, 64%, 66%, 0.1);
+  margin-top: 2.8rem;
+  position: relative;
+  border-radius: 0 0 .5rem .5rem;
+}
+hsl()
+.card-1 {
+  margin-top: 8rem;
+}
+
+.card-top-border {
+  position: absolute;
+  border: 1rem solid transparent;
+  width: 100%;
+  top: -.45rem;
+  border-radius: .9rem;
+  z-index: -1;
+}
+
+.card-1 .card-top-border {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.card-2 .card-top-border {
+  border-color: hsl(0, 78%, 62%);
+}
+
+.card-3 .card-top-border {
+  border-color: hsl(34, 97%, 64%);
+}
+
+.card-4 .card-top-border {
+ border-color: hsl(212, 86%, 64%);
+}
 
 /* ==========
   COMPONENTS
 ========== */
 
+img {
+  width: 8.5rem;
+  display: block;
+  margin-left: auto;
+  margin-top: 3.5rem;
+  padding-right: 2.9rem;
+}
 
 
 /* ==========
   @MEDIA QUERIES
 ========== */
 
-@media screen and (min-width:1000000000000) {
+@media screen and (min-width:1200px) {
 
   /* ==========
     @MEDIA QUERIES - TYPOGRAPHY
   ========== */
 
+  h2 {
+    margin-top: 0;
+  }
 
+  .header-title {
+    width: 25%;
+    margin: -.4rem auto;
+    letter-spacing: .1rem;
+    font-size: 3.4rem;
+  }
+
+  .header-description {
+    width: 28%;
+    margin: 2rem auto;
+    letter-spacing: .01rem;
+  }
+
+  .card-title {
+    padding-top: 2.8rem;
+    padding-left: 3.2rem;
+  }
+
+  .card-2-3 .card-title {
+    padding-top: 2.8rem;
+  }
+
+  .card-description {
+    margin-top: 1.5rem;
+    padding-left: 3.3rem;
+  }
+
+  .card-2-3 .card-description {
+    margin-top: 1.5rem;
+    padding-left: 3.3rem;
+  }
 
   /* ==========
     @MEDIA QUERIES - LAYOUT
   ========== */
 
+  .container {
+    width: 100%;
+  }
+
+  .card-header {
+    margin-bottom: 6.5rem;
+  }
+
+  .card-body {
+    margin: 0 auto;
+    max-width: 111rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cards {
+    height: 24.5rem;
+    margin: 0;
+    width: 35rem;
+  }
+
+  .card-3 {
+    margin-top: 3.4rem;
+  }
 
 
   /* ==========
     @MEDIA QUERIES - COMPONENTS
   ========== */
+
+  img {
+    width: 9.3rem;
+    margin-top: 4rem;
+    margin-left: 25/5rem;
+  }
