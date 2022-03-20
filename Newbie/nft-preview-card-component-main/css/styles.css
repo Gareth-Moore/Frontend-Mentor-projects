@@ -6,21 +6,35 @@
 html {
   font-size: 62.5%;
 }
+body {
+  font-size: 1.6rem;
+}
 
 /* ==========
   Typography
   ==========*/
 
-p {
-  font-size: 1.6rem;
-}
-
-.go-back {
-  color: hsl(215, 51%, 70%);
-  font-size: 1.6rem;
+.front-end-mentor-link,
+.my-projects,
+.my-code {
+  color: hsl(178, 100%, 50%);
   position: absolute;
   top: 1rem;
   left: 1rem;
+}
+.front-end-mentor-link:hover,
+.my-projects:hover,
+.my-code:hover {
+  text-decoration: none;
+  text-shadow: 0 0 .2rem hsl(0, 0%, 100%);
+}
+
+.my-projects {
+  left: 14.1504rem;
+}
+
+.my-code {
+  left: 23.587rem;
 }
 
 .title {

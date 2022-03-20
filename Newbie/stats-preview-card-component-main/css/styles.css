@@ -32,11 +32,27 @@ body {
   TYPOGRAPHY
 ========== */
 
-.go-back-link {
+.front-end-mentor-link,
+.my-projects,
+.my-code {
   color: hsl(277, 64%, 61%);
   position: absolute;
   top: 1rem;
   left: 1rem;
+}
+.front-end-mentor-link:hover,
+.my-projects:hover,
+.my-code:hover {
+  text-decoration: none;
+  text-shadow: 0 0 .1rem hsla(0, 0%, 100%, 0.6);
+}
+
+.my-projects {
+  left: 14.1504rem;
+}
+
+.my-code {
+  left: 23.587rem;
 }
 
 .title {

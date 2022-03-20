@@ -1,37 +1,62 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+}
 
 /*=============
   Typography
   =============*/
 
-.go-back {
-  font-family: 'Outfit', sans-serif;
+.front-end-mentor-link,
+.my-projects,
+.my-code {
   color: hsl(218, 44%, 22%);
-  font-size: 1rem;
   position: absolute;
   top: 1rem;
   left: 1rem;
 }
+.front-end-mentor-link:hover,
+.my-projects:hover,
+.my-code:hover {
+  text-decoration: none;
+  text-shadow: 0 0 .1rem hsl(220, 15%, 55%);
+}
+
+.my-projects {
+  left: 14.1504rem;
+}
+
+.my-code {
+  left: 23.587rem;
+}
 
 .qr_text {
-  width: 83%;
-  margin: 1.5rem auto;
-  font-family: 'Outfit', sans-serif;
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 1.5rem;
   color: hsl(218, 44%, 22%);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
 }
 
 p {
-  font-weight: 400;
-  font-size: 1rem;
   color: hsl(220, 15%, 55%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  padding-bottom: 2.4rem;
 }
 
 
@@ -48,8 +73,7 @@ body {
 }
 
 main {
-  border: 1px solid white;
-  width: 340px;
+  width: 32rem;
   background-color: white;
   border-radius: 15px;
 }
@@ -59,8 +83,8 @@ main {
   =============*/
 
 img {
-  display: block;
   width: 90%;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
+  display: block;
   border-radius: 10px;
 }
