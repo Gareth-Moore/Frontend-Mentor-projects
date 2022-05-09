@@ -3,33 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48x48.png">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <!-- go back to root directory for all projects -->
+  <nav>
+    <a href="" class="front-end-mentor-link">Frontend Mentor</a>
+    <a href="../../index.html" class="my-projects">My Projects</a>
+    <a href="" class="my-code">My Code  MISSING LINK</a>
+  </nav>
 
-  80K
-  Followers
+  <!-- profile card -->
+  <main>
+    <!-- card, 3 layers = image-banenr, personal-info and stat-container -->
+    <div class="image-banner">
+      <img class="profile-picture" src="images/image-victor.jpg" alt="">
+    </div>
 
-  803K
-  Likes
+    <div class="personal-info">
+      <h1 class="name">Victor Crest      <span class="age">26</span></h1>
+      <p class="city">London</p>
+    </div>
+    <!-- go back to root directory for all projects -->
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="stat-container">
+      <div class="stat-item">
+        <h2>80K</h2>
+        <p>Followers</p>
+      </div>
+      <div class="stat-item">
+        <h2>803K</h2>
+        <p>Likes</p>
+      </div>
+      <div class="stat-item">
+        <h2>1.4K</h2>
+        <p>Photos</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

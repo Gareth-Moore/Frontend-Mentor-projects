@@ -1,0 +1,184 @@
+
+/* ==========
+  DEFAULTS
+  ========== */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* font-size: 1.6rem; */
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+/* ==========
+  TYPOGRAPHY
+========== */
+
+  .front-end-mentor-link,
+  .my-projects,
+  .my-code {
+    color: hsl(179, 100%, 13%);
+    padding-left: 1rem;
+  }
+  .front-end-mentor-link:hover,
+  .my-projects:hover,
+  .my-code:hover {
+    text-decoration: none;
+    text-shadow: 0 0 .1rem hsl(184, 100%, 22%);
+  }
+
+nav {
+  position: absolute;
+  top: .5rem;
+  left: 0;
+  font-size: 1.6rem;
+}
+
+.name {
+  font-size: 1.8  5rem;
+  text-align: center;
+  margin: 7.3rem 0 0 0;
+  letter-spacing: 0.01rem;
+  color: hsl(229, 23%, 23%);
+}
+
+.age {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  padding-left: .7rem;
+  margin: 0;
+}
+
+.city {
+  margin-top: .8rem;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 59%);
+  text-align: center;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h2 {
+  font-size: 1.8rem;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  margin-top: .3rem;
+  letter-spacing: .15rem;
+
+}
+/* ==========
+  LAYOUT
+========== */
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: url(../images/bg-pattern-top.svg) no-repeat,
+              url(../images/bg-pattern-bottom.svg) no-repeat;
+  background-position: top 200% right -20%, bottom 200% right 120%;
+  background-color: hsl(185, 75%, 39%);
+}
+
+main {
+  border-radius: 1.5rem;
+  height: 37.5rem;
+  width: 32.6rem;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-banner {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 14rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: 100%;
+}
+
+.personal-info {
+  border-bottom: .1rem solid hsla(0, 0%, 58%, 0.21);
+  height: 7.3rem;
+}
+
+.stat-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2.5rem;
+}
+
+.stat-item {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+/* ==========
+  COMPONENTS
+========== */
+
+.top {
+  position: absolute;
+  top: -60rem;
+  left: -75rem;
+}
+
+.bottom {
+  width: 71rem;
+  position: absolute;
+  top: 34rem;
+  left: 16rem;
+}
+
+.profile-picture {
+  border-radius: 100%;
+  border: .5rem solid white;
+  display: block;
+  position: absolute;
+  top: 8.9rem;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/* ==========
+  @MEDIA QUERIES
+========== */
+
+  @media screen and (min-width:376px) {
+
+  /* ==========
+    @MEDIA QUERIES - TYPOGRAPHY
+  ========== */
+
+
+
+  /* ==========
+    @MEDIA QUERIES - LAYOUT
+  ========== */
+  body {
+    background-position: top 200% left -50%,
+      bottom 220% right -60%;
+  }
+
+
+  /* ==========
+    @MEDIA QUERIES - COMPONENTS
+  ========== */
+
+}
