@@ -1,0 +1,103 @@
+
+/* ==========
+  DEFAULTS
+  ========== */
+{
+  #EAFBFF
+  #1fda9c
+  #77DDF9
+  #FFA0A3
+  #7F8FA3
+  font-family: 'Dosis', sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  background-image: linear-gradient( 145.6deg,
+    #EAFBFF 11.8%,
+    #77DDF9 60.6%,
+    #6cf6c8 100.3%
+    );
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/* ==========
+  TYPOGRAPHY
+========== */
+
+h1 {
+  display: inline-block;
+  background-image: url(white-tile.png);
+  margin: 0;
+  font-size: 8rem;
+  text-align: center;
+  font-weight: 400;
+  width: 100%;
+  height: 25vh;
+  text-align: center;
+}
+
+/* ==========
+  LAYOUT
+========== */
+
+header {
+  margin: 0;
+  width: 100%;
+  height: 25vh;
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/* ==========
+  COMPONENTS
+========== */
+
+img {
+  display: inline-block;
+  /* vertical-align: middle; */
+  height: 11.6rem;
+  border-radius: 5px 0 0 5px;
+  vertical-align: middle;
+}
+
+/* ==========
+  @MEDIA QUERIES
+========== */
+/*
+@media screen and (min-width:1000000000000) { */
+
+  /* ==========
+    @MEDIA QUERIES - TYPOGRAPHY
+  ========== */
+
+
+
+  /* ==========
+    @MEDIA QUERIES - LAYOUT
+  ========== */
+
+
+
+  /* ==========
+    @MEDIA QUERIES - COMPONENTS
+  ========== */
