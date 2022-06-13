@@ -37,7 +37,8 @@ main {
     margin-top: 0;
     color: var(--cyan);
 }
-.heading h4 {
+.heading h2 {
+    font-size: 1rem;
     color: var(--bright-yellow);
 }
 .heading p {
@@ -130,7 +131,7 @@ main {
     .heading h1 {
         font-size: 1.5rem;
     }
-    .heading h4 {
+    .heading h2 {
         font-size: 1.1rem;
         margin-bottom: .5rem;
     }
