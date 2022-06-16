@@ -3,10 +3,8 @@ let divAvatar = document.querySelector(".details-avatar");
 let buttonSocial = document.querySelector(".btn-close");
 let divSocial = document.querySelector(".popup-social");
 
-
-buttonAvatar.addEventListener("mousedown", e => {toggle();})
-buttonSocial.addEventListener("mousedown", e => {toggle();})
-window.addEventListener("mousedown", e => {
+// turn off popup when user clicks anywhere on screen
+function windowToggleOff(e) {
     if (
         e.target.classList.contains("btn-open") ||
         e.target.classList.contains("btn-close") || 
@@ -16,15 +14,14 @@ window.addEventListener("mousedown", e => {
     }
     else {
         if (divSocial.classList.contains("hidden")) {
-            console.log(e)
             return;
         } else {
-            toggle(e);
-            console.log(e)
+            toggle();
         }
     }
-})  
+}
 
+// toggle popup on and off with button
 function toggle () {
     if (divSocial.classList.contains("hidden")) {
         divSocial.classList.remove("hidden");
@@ -33,3 +30,7 @@ function toggle () {
         divSocial.classList.add("hidden");
     }
 }
+
+buttonAvatar.addEventListener("mousedown", e => {toggle();})
+buttonSocial.addEventListener("mousedown", e => {toggle();})
+window.addEventListener("mousedown", e => {windowToggleOff(e);})
