@@ -264,7 +264,7 @@ body {
         left: 50%;
         border: 0.75rem solid transparent;
         border-top-color: var(--Very-Dark-Grayish-Blue);
-      }
+    }
 }
 
 /* class to show and hide popup */
