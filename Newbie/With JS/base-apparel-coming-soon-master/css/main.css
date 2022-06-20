@@ -177,6 +177,7 @@ button:hover {
     main {
         display: flex;
         justify-content: space-between;
+        
     }
 
     .hero-img-desktop {
@@ -189,8 +190,13 @@ button:hover {
 
     .hero {
         flex-grow: 1;
-        margin-left: 11.5%;
+        padding-left: 11.5%;
         text-align: left;
+        background: url(../images/bg-pattern-desktop.svg) left top no-repeat, 
+        linear-gradient(135deg, 
+        var(--gradient-primary-light),
+        var(--gradient-primary-dark));
+        background-size: cover;
     }
 
     .logo {
