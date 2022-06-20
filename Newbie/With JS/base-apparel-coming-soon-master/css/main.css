@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish: hsl(0, 6%, 24%);
+
+    --gradient-primary-light: hsl(0, 0%, 100%);
+    --gradient-primary-dark: hsl(0, 100%, 98%);
+
+    --gradient-secondary-light: hsl(0, 80%, 86%);
+    --gradient-secondary-dark: hsl(0, 74%, 74%);
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+
+    --ff-primary: "Josefin Sans", sans-serif;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: var(--gradient-primary-dark);
+}
+
+/* Developer links */
+
+nav {
+    position: absolute;
+    bottom: .7rem;
+    left: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    border-bottom: .1rem dotted var(--soft-red);
+}
+nav a:hover {
+    border-bottom: .3rem solid var(--soft-red);
+}
+nav a:link {
+    color: var(--soft-red);
+}
+nav a:visited {
+    color: var(--soft-red);
+}
+
+/* Start here: */
+
+.logo {
+    padding: 1.9rem 2rem 2rem;
+    width: 165px;
+    display: block;
+}
+
+.hero-img-mobile {
+    width: 100%;
+    height: 250px;
+    background: url('../images/hero-mobile.jpg') center no-repeat,
+    linear-gradient(345deg, 
+    var(--desaturated-red),
+    var(--gradient-secondary-light));
+}
+
+.hero {
+    text-align: center;
+}
+
+span {
+    display: block;
+    line-height: 2rem;
+}
+.span-1 {
+    color: var(--desaturated-red);
+    font-weight: var(--fw-300);
+    margin-top: 4.3rem;
+    font-size: 2.6rem;
+    letter-spacing: .6rem;
+}
+.span-2, .span-3 {
+    margin-top: .8rem;
+    font-size: 2.65rem;
+    letter-spacing: .6rem;
+    line-height: 1.8rem;
+}
+
+p {
+    line-height: 1.35rem;
+    width: 86%;
+    max-width: 416px;
+    font-size: .9rem;
+    margin: 1.45rem auto;
+    color: var(--desaturated-red);
+    letter-spacing: .002rem;
+}
+
+.hero-input {
+    position: relative;
+    width: 83%;
+    max-width: 312px;
+    margin: 2.1rem auto;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: .001rem solid var(--desaturated-red);
+    color: var(--desaturated-red);
+    padding-left: 1.4rem;
+    font-size: .9rem;
+    background-color: transparent;
+}
+
+button {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0rem;
+    width: 4rem;
+    border-radius: 2rem;
+    border: none;
+    background:
+        url("../images/icon-arrow.svg") center no-repeat,
+        linear-gradient(135deg, 
+        var(--gradient-secondary-light),
+        var(--gradient-secondary-dark));
+    box-shadow: 0 .5rem 2rem -0.3rem var(--desaturated-red);
+}
+button:active, button:hover {
+    background: 
+        url("../images/icon-arrow.svg") center no-repeat,
+        linear-gradient(135deg, 
+        rgb(250, 212, 212),
+        hwb(0 71% 0%));
+    box-shadow: 0 .5rem 2rem var(--desaturated-red);
+}
+button:hover {
+    cursor: pointer;
+}
+
+#error-icon {
+    display: none;
+    position: absolute;
+    top: 25%;
+    right: 4.5rem;
+}
+
+#error-message {
+    display: none;
+    text-align: left;
+    margin-top: .5rem;
+    color: var(--soft-red);
+}
+
+
+/* media queries */
+@media screen and (min-width: 1124px) {
+    
+    nav {
+        top: .7rem;
+    }
+
+    .hero-img-mobile {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero-img-desktop {
+        display: block;
+        width: 71%;
+        height: 100vh;
+        background: url('../images/hero-desktop.jpg') center no-repeat;
+        background-size: cover;
+    } 
+
+    .hero {
+        flex-grow: 1;
+        margin-left: 11.5%;
+        text-align: left;
+    }
+
+    .logo {
+        padding: 0;
+        margin-top: 4rem;
+    }
+    
+    h1 {
+        margin: 9.3rem auto 0 0;
+    }
+    
+    .span-1, .span-2, .span-3 {
+        font-size: 4.2rem;
+        letter-spacing: .95rem;
+        margin: 0 0 .5rem 0;
+        line-height: 2.5rem;
+    }
+
+    .span-1 {
+        margin-bottom: 1rem;
+    }
+
+    .span-2, .span-3 {
+        line-height: 4rem;
+        font-size: 4rem;
+        letter-spacing: 1.1rem;
+    }
+
+    p {
+        margin: 1.1rem auto 1rem 0;
+        line-height: 1.8rem;
+        letter-spacing: .05rem;
+        max-width: 65%;
+    }
+
+    .hero-input {
+        margin-top: 2.4rem;
+        margin-left: 0;
+        height: 3.5rem;
+        max-width: 66.5%;
+    }
+
+    input {
+        padding-left: 2rem;
+        font-size: 1rem;
+        padding-top: .3rem;
+    }
+
+    button {
+        height: 100%;
+        width: 6.2rem;
+    }
+
+    #error-icon {
+        top: 31%;
+        right: 7rem;
+    }
+
+    #error-message {
+        margin-left: 2rem;
+    }
+}
+
+input:focus {
+    outline: 2px solid var(--soft-red);
+}
+
+
+/* 
+/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ 
+*/

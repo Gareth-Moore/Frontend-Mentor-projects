@@ -2,32 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  We're coming soon
+  <!-- developer links -->
+  <nav>
+    <a href="https://www.frontendmentor.io/solutions/responsive-layout-with-diligent-patience-css-js-html-0CR_yhJVHT">Frontend Mentor</a>
+    <a href="../../../index.html" class="my-projects">My Projects</a>
+    <a href="https://github.com/Gareth-Moore/Frontend-Mentor-projects/tree/master/Newbie/With%20JS/article-preview-component-master" class="my-code">My Code</a>
+  </nav>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+  <!-- start here -->
+  <main>
+    <div class="hero">
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      <img class="logo" src="images/logo.svg" alt="Image of Base Apparel logo">
+      <div class="hero-img-mobile"></div>
+
+      <div class="hero-text">
+        <h1>
+          <span class="span-1">WE'RE</span>
+          <span class="span-2">COMING</span>
+          <span class="span-3">SOON</span>
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form class="hero-input" onsubmit="checkEmail(); return false">
+          <input type="email" placeholder="Email Address">
+          <button type="submit"></button>
+          <img id="error-icon" src="images/icon-error.svg" alt="">
+          <p id="error-message">Please provide a valid email</p>
+        </form>
+      </div>
+
+    </div>
+    <div class="hero-img-desktop"></div>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
