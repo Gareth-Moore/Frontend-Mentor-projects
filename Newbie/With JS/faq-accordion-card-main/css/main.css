@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {    
+    --clr-primary-light: hsl(240, 6%, 50%);
+    --clr-primary-dark: hsl(237, 12%, 33%);
+    --clr-secondary: hsl(238, 29%, 16%);
+    --clr-accent: hsl(14, 88%, 65%); 
+
+    --clr-bg-light: hsl(273, 75%, 66%);
+    --clr-bg-dark: hsl(240, 73%, 65%);
+
+    --clr-dividers: hsl(240, 5%, 91%);
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+}
+
+/* developer links */
+nav {
+    font-size: 1.33rem;
+    position: absolute;
+    top: .7rem;
+    left: 1rem;
+}
+nav a, a:link {
+    color: var(--clr-secondary);
+    text-decoration: none;
+}
+nav a + a {
+    margin-left: .4em;
+}
+nav a:hover {
+    border-bottom: .3rem solid var(--clr-secondary);
+}
+
+/* start here */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(189deg, 
+    var(--clr-bg-light), 
+    var(--clr-bg-light)30%, 
+    hwb(249 39% 9%));
+}
+
+.card {
+    width: 87%;
+    max-width: 670px;
+    margin: 12.2rem auto auto auto;
+    min-height: 44.8rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.card-image-desktop,
+.card-image-desktop-shadow,
+.card-image-desktop-accent {
+    display: none;
+}
+
+.card-images-container {
+    height: 8rem;
+    position: relative;
+}
+
+.card-image-mobile {
+    width: 20rem;
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.card-image-mobile-shadow {
+    width: 20rem;
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 00%);
+}
+
+.card-body {
+    padding: 1rem 1.9rem 1rem 2rem;
+    flex-shrink: 1;
+}
+
+.faq-title {
+    font-size: 2.7rem;
+    color: var(--clr-secondary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.faq-list {
+    padding-left: 0.1rem;
+    list-style: none;
+}
+
+.faq-list-item {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.item-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--clr-primary-light);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1.3rem;
+    padding-bottom: 1.55rem;
+    user-select: none;
+}
+
+/* for js, active <h2> */
+.active-text {
+    font-weight: 700;
+    color: var(--clr-primary-dark);
+}
+
+.item-title:hover {
+    /* 
+    font-weight: 700 !important;
+
+    I left this in in case you are reading this...
+    JS changes the style of the font weight during
+    click events. Thus overriding the :hover state 
+    because JS adds inline styles which take higher
+    precedence.
+
+    To ensure the :hover state add !important to it. 
+    */
+    color: var(--clr-accent);
+}
+
+.item-description {
+    line-height: 1.5rem;
+    color: var(--clr-primary-light);
+    max-width: 90%;
+    max-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: -.6rem;
+    transition: max-height 150ms ease-in-out;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* for js, show <p> */
+.show {
+    max-height: 6rem;
+    margin-bottom: .9rem;
+}
+
+.item-button {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 1.6rem;
+    right: -.1rem;
+    background: url(../images/icon-arrow-down.svg) center no-repeat;
+    transition: 
+    150ms transform ease-in;
+    border: none;
+    cursor: pointer;
+}
+
+.faq-list-item:hover button {
+    scale: 1.4;
+}
+
+/* for js, for <button> */
+.active {
+    transform: rotate(180deg) scale(1.4);
+}
+
+hr {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border: none;
+    border-top: 1px solid var(--clr-dividers);
+}
+
+@media screen and (min-width: 1240px) {
+    body {
+        align-items: center;
+    }
+    .card {
+        margin: 0;
+        max-width: 920px;
+        height: 42.5rem;
+        min-height: unset;
+        position: relative;
+        flex-direction: row;
+    }
+
+    .card-images-container {
+        max-width: 466px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .card-image-mobile,    
+    .card-image-mobile-shadow {
+        display: none;
+    }
+
+    .card-image-desktop,
+    .card-image-desktop-shadow,
+    .card-image-desktop-accent {
+        display: block;
+        position: absolute;
+    }
+
+    .card-image-desktop {
+        top: 13.5%;
+        left: -18%;
+    }
+
+    .card-image-desktop-shadow {
+        width: 932px;
+        top: -53%;
+        left: -45rem;
+    }
+
+    .card-image-desktop-accent {
+        top: 40%;
+        left: -10.8rem;
+    }
+
+    .card-body {
+        width: 39.8%;
+        margin-right: auto;
+        margin-left: 0;
+        padding-left: 0.3rem;
+        align-self: flex-start;
+    }
+
+    .card-images-container {
+        width: 51%;
+    }
+
+    .faq-title {
+        text-align: left;
+        margin-top: 4.2rem;
+        padding-top: 0rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .item-title {
+        letter-spacing: .06rem;
+    }
+
+    .item-description {
+        line-height: 1.5;
+    }
+}
