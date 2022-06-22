@@ -181,10 +181,6 @@ body {
     cursor: pointer;
 }
 
-.faq-list-item:hover button {
-    scale: 1.4;
-}
-
 /* for js, for <button> */
 .active {
     transform: rotate(180deg) scale(1.4);
