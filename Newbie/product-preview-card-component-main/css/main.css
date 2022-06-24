@@ -169,6 +169,7 @@ body {
         flex: 0 0 50%;
         height: 100%;
         border-bottom-left-radius: .7rem;
+        border-top-right-radius: 0;
     }
 
     .information-container {
