@@ -30,8 +30,19 @@ body {
 /* Developer links */
 nav {
     position: absolute;
-    top: .7rem;
+    top: .5rem;
     left: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+nav a + a {
+    margin-left: .7rem;
+}
+nav a, a:hover, a:link, a:visited{
+    color: var(--clr-primary-dark-cyan);
+    text-decoration: none;
+}
+nav a:hover {
+    border-bottom: 2px solid var(--clr-primary-dark-cyan);
 }
 
 /* start here */
