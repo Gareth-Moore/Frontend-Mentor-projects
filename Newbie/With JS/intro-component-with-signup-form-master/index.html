@@ -2,41 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  Learn to code by watching others
+  <main>
+    <header class="header-container">
+      <h1 class="title">Learn to code by watching others</h1>
+      <p class="description">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </header>
+    <div class="signup-container">
+      <div class="price">
+        <strong>Try it free 7 days</strong> then $20/mo. thereafter
+      </div>
+      <form action="" class="form-container">
+        <div class="form-item">
+          <input type="text" id="first-name" placeholder="First Name"><img src="images/icon-error.svg" alt="Error image" class="error-icon hidden"></input>
+          <label class="hidden" for="first-name">First Name cannot be empty</label>
+        </div>
+        <div class="form-item">
+          <input type="text" id="last-name" placeholder="Last Name"><img src="images/icon-error.svg" alt="Error image" class="error-icon hidden"></input>
+          <label class="hidden" for="last-name">Last Name cannot be empty</label>
+        </div>
+        <div class="form-item">
+          <input data-type="email" id="email" placeholder="Email Address"><img src="images/icon-error.svg" alt="Error image" class="error-icon hidden"></input>
+          <label class="hidden" for="email">Looks like this is not an email</label>
+        </div>
+        <div class="form-item">
+          <input type="password" id="password" placeholder="Password">
+          <img src="images/icon-error.svg" alt="Error image" class="error-icon hidden">
+          <label class="hidden" for="password">Password cannot be empty</label>
+        </div>
+        <div class="submit-container">
+          <button type="submit" class="submit">CLAIM YOUR FREE TRIAL</button>
+          <p class="terms-of-service">By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
+        </div>
+      </form>
+    </div>
+    
+    <!-- developer links -->
+    <nav>
+      <a href="">Frontend Mentor</a>
+      <a href="../../../index.html" class="my-projects">My Projects</a>
+      <a href="https://github.com/Gareth-Moore/Frontend-Mentor-projects/tree/master/Newbie/With%20JS/intro-component-with-signup-form-master" class="my-code">My Code</a>
+    </nav>
+  </main>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
