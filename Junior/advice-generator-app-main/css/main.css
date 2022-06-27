@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --clr-primary-Light-Cyan: hsl(193, 38%, 86%);
+    --clr-primary-Neon-Green: hsl(150, 100%, 66%);
+
+    --clr-secondary-Grayish-Blue: hsl(217, 19%, 38%);
+    --clr-secondary-Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --clr-secondary-Dark-Blue: hsl(218, 23%, 16%);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 28px;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* dev links */
+
+
+/* START HERE */
+body {
+    background-color: var(--clr-secondary-Dark-Blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    background-color: var(--clr-secondary-Dark-Grayish-Blue);
+    width: 91.5%;
+    max-width: 343px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .9rem;
+    border-radius: .3rem;
+    border: 1px solid transparent;
+}
+
+main .title {
+    color: var(--clr-primary-Neon-Green);
+    font-size: .4rem;
+    font-weight: 700;
+    letter-spacing: .12rem;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+main .advice {
+    width: 100%;
+    color: var(--clr-primary-Light-Cyan);
+    font-size: .83rem;
+    display: inline-block;
+    margin-top: .6rem;
+    line-height: 1.18rem;
+    text-align: center;
+    letter-spacing: .001rem;
+}
+
+main .divider-mobile {
+    margin-top: .8rem;
+    width: 100%;
+    margin-bottom: 1.12rem;
+}
+
+main .divider-desktop {
+    display: none;
+}
+
+main .api-request-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: var(--clr-primary-Neon-Green);
+    padding: .8rem;
+    border: none;
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+main .api-request-btn:hover {
+    box-shadow: 0 0 1rem var(--clr-primary-Neon-Green);
+    cursor: pointer;
+}
+
+main .api-request-btn img {
+    width: .85rem;
+    height: .85rem;
+    transform: translate(-10%, -10%);
+}
+
+@media screen and (min-width: 769px) {
+    main {
+        max-width: 540px;
+        padding: 1.5rem;
+    }
+
+    main .title {
+        font-size: .51rem;
+        margin-top: .1rem;
+    }
+
+    main .advice {
+        font-size: .95rem;
+        line-height: 1.35rem;
+        letter-spacing: 0.012rem;
+        margin-top: .5rem;
+    }
+
+    main .divider-mobile {
+        display: none;
+    }
+    main .divider-desktop {
+        display: block;
+        width: 98%;
+        margin-top: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.05rem;
+    }
+
+    
+}
