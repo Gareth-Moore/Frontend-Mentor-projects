@@ -3,7 +3,7 @@ let adviceId = document.querySelector('.advice-id');
 let adviceRequestBtn = document.querySelector('.api-request-btn');
 let apiUrl = "https://api.adviceslip.com/advice";
 
-adviceRequestBtn.addEventListener('click', e => {
+adviceRequestBtn.addEventListener('click', () => {
     fetch(apiUrl)
     .then(res => res.json())
     .then(data => {
@@ -12,4 +12,3 @@ adviceRequestBtn.addEventListener('click', e => {
         data = 0;
     })
 })
-    

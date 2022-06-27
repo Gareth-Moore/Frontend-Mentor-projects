@@ -23,6 +23,25 @@ body {
 }
 
 /* dev links */
+nav {
+    position: absolute;
+    top: .3rem;
+    left: .5rem;
+    font-size: .6rem;
+    color: var(--clr-primary-Light-Cyan);
+}
+nav a + a {
+    margin-left: .3rem;
+}
+nav a,
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: var(--clr-primary-Light-Cyan);
+}
+nav a:hover {
+    border-bottom: 2px solid var(--clr-primary-Light-Cyan);
+}
 
 
 /* START HERE */
