@@ -2,7 +2,7 @@ let adviceOutput = document.querySelector('.advice');
 let adviceId = document.querySelector('.advice-id');
 let adviceRequestBtn = document.querySelector('.api-request-btn');
 let btnImgSpin = document.querySelector('.api-request-btn img');
-let apiUrl = "https://api.adviceslipcom/advice";
+let apiUrl = "https://api.adviceslip.com/advice";
 
 adviceRequestBtn.addEventListener('click', e => {
     btnImgSpin.classList.add('btn-img-spin');
