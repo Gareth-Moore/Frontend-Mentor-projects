@@ -1,14 +1,25 @@
 let adviceOutput = document.querySelector('.advice');
 let adviceId = document.querySelector('.advice-id');
 let adviceRequestBtn = document.querySelector('.api-request-btn');
-let apiUrl = "https://api.adviceslip.com/advice";
+let btnImgSpin = document.querySelector('.api-request-btn img');
+let apiUrl = "https://api.adviceslipcom/advice";
 
-adviceRequestBtn.addEventListener('click', () => {
+adviceRequestBtn.addEventListener('click', e => {
+    btnImgSpin.classList.add('btn-img-spin');
     fetch(apiUrl)
-    .then(res => res.json())
-    .then(data => {
-        adviceId.textContent = data.slip.id;
-        adviceOutput.textContent = data.slip.advice;
-        data = 0;
-    })
+        .then(response => response.ok ? response.json() : Promise.reject("API failed"))
+        .then(data => {
+            adviceId.textContent = data.slip.id;
+            adviceOutput.textContent = data.slip.advice;
+            data = 0;
+        })
+        .catch(err => {
+            adviceId.textContent = "0";
+            adviceOutput.textContent = "Oops, the API call was unsuccessful... :(";
+            console.log(Promise.reject);
+        })
+})
+
+btnImgSpin.addEventListener('transitionend', e => {
+    btnImgSpin.classList.remove('btn-img-spin');
 })
