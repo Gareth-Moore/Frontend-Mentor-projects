@@ -37,6 +37,10 @@ body {
     margin: 0;
 }
 
+main {
+    overflow: hidden;
+}
+
 /* developer links */
 .developer-links {
     position: absolute;
@@ -50,7 +54,7 @@ body {
     color: var(--clr-neutral-white);
     text-decoration: none;
     letter-spacing: -0.01rem;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 .developer-links a + a {
     margin-left: .5rem;
@@ -283,10 +287,7 @@ hr {
 .article-one img {
     transform: scale(1.08);
     width: 100%;
-}
-
-.article-one div {
-    overflow: hidden;
+    max-width: 375px;
 }
 
 .article-one h2 {
@@ -330,6 +331,8 @@ hr {
 .article-two img {
     position: absolute;
     width: 100%;
+    max-width: 375px;
+
     transform: translate(-50%, -46.5%) scale(1.02);
 }
 
@@ -349,11 +352,10 @@ hr {
 }
 
 /* ARTICLE THREE */
-.article-three div {
-    overflow: hidden;
-}
 .article-three img {
     width: 100%;
+    max-width: 375px;
+
     transform: scale(1.33);
     margin-top: 6.6rem;
 }
