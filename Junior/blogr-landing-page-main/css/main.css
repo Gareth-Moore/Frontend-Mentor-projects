@@ -285,6 +285,10 @@ hr {
     width: 100%;
 }
 
+.article-one div {
+    overflow: hidden;
+}
+
 .article-one h2 {
     font-size: 1.75rem;
     margin-top: 3.55rem;
@@ -345,6 +349,9 @@ hr {
 }
 
 /* ARTICLE THREE */
+.article-three div {
+    overflow: hidden;
+}
 .article-three img {
     width: 100%;
     transform: scale(1.33);
@@ -420,3 +427,6 @@ footer nav {
     margin-top: 2.8rem;
 }
 
+.footer-links div:nth-child(3) h3 {
+    margin-top: 3rem;
+}
