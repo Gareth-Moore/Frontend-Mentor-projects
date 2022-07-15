@@ -22,7 +22,24 @@ body {
 
 /* DEVELOPER LINKS */
 
-
+nav {
+    position: absolute;
+    top: .7rem;
+    left: 1rem;
+    font-size: 1.1rem;
+}
+nav a,
+nav a:visited,
+nav a:link {
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+nav a:hover {
+    border-bottom: 2px solid var(--clr-primary);
+}
+nav a + a {
+    margin-left: .7rem;
+}
 
 /* START HERE */
 .hidden {
