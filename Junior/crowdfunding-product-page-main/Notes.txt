@@ -1,0 +1,32 @@
+Navigation Bar
+MV - Logo + Dropdown (About, Discover, Get Started)
+DV - Logo + (About, Discover, Get Started)
+
+Main - Back This Project (Card 1)
+MV/DV - Simple card h1, p, and 2x buttons
+Buttons open > "Back This Project Modal Window"
+
+Aside - Backers Statistics
+MV - stacked verticall
+DV - stacked horizontally
+Contains a progress bar
+
+Article - About this project 
+MV/DV - same vertical alignment. h2, p, p
+Followed by 3 cards for each pledge cards
+    Pledge cards
+    h3, h4 (DV horizontally, MV vertically) 
+    p, span/p, button (DV horizontally, MV vertically) 
+    Active and inactive states
+    Button > "Select Reward" opens "Back This Project Modal Window"
+
+Back This Project Modal Window
+Contains same cards as "About this project" + 1 additional card
+Cards have active and inactive states
+Active state drops down >
+    p, input, button
+
+Thank you Modal Window
+After selecting "Continue" display this modal to thank customer
+Contains > img, h2, p, button
+Button should close modal
