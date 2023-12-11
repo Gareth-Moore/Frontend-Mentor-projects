@@ -2,7 +2,7 @@
   --dark-magenta: hsl(303, 10%, 53%);
   --very-dark-magenta: hsl(300, 43%, 22%);
   --soft-pink: hsl(333, 80%, 67%);
-  --light-magenta:hsl(300, 24%, 96%);
+  --light-magenta: hsl(300, 24%, 96%);
 }
 
 .my-profile-links {
@@ -12,13 +12,16 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   font-family: "Spartan", sans-serif;
-  background: url(../images/bg-pattern-top-mobile.svg) left top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
+  background: url(../images/bg-pattern-top-mobile.svg) left top no-repeat,
+    url(../images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
 }
 
-.hero-description, .hero-ratings, .card { 
+.hero-description,
+.hero-ratings,
+.card {
   max-width: 529px;
   margin-left: auto;
   margin-right: auto;
@@ -36,7 +39,7 @@ body {
   font-size: 1.05em;
   color: var(--dark-magenta);
   text-align: center;
-  letter-spacing: .005em;
+  letter-spacing: 0.005em;
   margin: 1.5em auto;
   width: 88%;
   columns: var(--dark-magenta);
@@ -58,26 +61,27 @@ body {
   align-items: center;
 }
 .ratings-item img {
-  margin: 0 .14em;
+  margin: 0 0.14em;
 }
 .ratings-item p {
-  margin: .6em 0 0 0;
+  margin: 0.6em 0 0 0;
   font-weight: bold;
   color: var(--very-dark-magenta);
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
 .card-container {
   margin-top: 2.7em;
+  margin-bottom: 100px;
   width: 100%;
 }
 .card {
   box-sizing: border-box;
-  border-radius: .5em;
+  border-radius: 0.5em;
   width: 91%;
   background-color: var(--very-dark-magenta);
   margin: 0 auto 1em auto;
-  padding: 2.5em 2em 2em 2em;  
+  padding: 2.5em 2em 2em 2em;
 }
 .card img {
   vertical-align: middle;
@@ -92,33 +96,33 @@ body {
   vertical-align: middle;
   color: white;
   font-weight: bold;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 .card span {
   color: var(--soft-pink);
   display: inline-block;
-  margin-top: .2em;
+  margin-top: 0.2em;
   font-weight: normal;
 }
 .card q {
   margin-top: 2em;
   display: inline-block;
   line-height: 1.4em;
-  font-size: .95em;
+  font-size: 0.95em;
   color: var(--light-magenta);
 }
-
 
 @media screen and (min-width: 1220px) {
   body {
     height: 100vh;
-    background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat, url(../images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+    background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat,
+      url(../images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-
   }
-  .hero-container, .card-container { 
+  .hero-container,
+  .card-container {
     display: flex;
     width: 78%;
     max-width: 1100px;
@@ -127,7 +131,6 @@ body {
   .hero-description {
     margin: 0;
     flex-basis: 50%;
-
   }
   .hero-description h1 {
     font-size: 3.4em;
@@ -140,7 +143,7 @@ body {
     text-align: left;
     margin-left: 0;
     margin-bottom: 0;
-    margin-top: .4rem;
+    margin-top: 0.4rem;
   }
   .hero-ratings {
     display: flex;
@@ -153,10 +156,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    height:52px;
+    height: 52px;
     margin-bottom: 1.4rem;
     width: 85%;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
   .hero-ratings div:nth-child(2) {
     position: relative;
