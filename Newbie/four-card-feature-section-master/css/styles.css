@@ -1,4 +1,3 @@
-
 /* ==========
   DEFAULTS
   ========== */
@@ -12,9 +11,8 @@ html {
 body {
   font-size: 1.5rem;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
 
 /* ==========
   TYPOGRAPHY
@@ -68,8 +66,8 @@ body {
 .card-title {
   color: hsl(234, 12%, 34%);
   font-size: 2rem;
-  letter-spacing: .015rem;
-  margin-bottom: -.8rem;
+  letter-spacing: 0.015rem;
+  margin-bottom: -0.8rem;
   padding-top: 2.1rem;
   padding-left: 2.65rem;
 }
@@ -79,7 +77,7 @@ body {
   color: hsl(229, 6%, 66%);
   font-size: 1.2rem;
   font-weight: 400;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   line-height: 2.3rem;
   padding-left: 2.82rem;
 }
@@ -112,10 +110,9 @@ header {
   margin-top: 2.8rem;
   position: relative;
   background-color: white;
-  border-radius: 0 0 .5rem .5rem;
-  box-shadow:
-  1rem 1rem 1.5rem hsla(229, 64%, 66%, 0.1),
-  -1rem 1rem 1.5rem hsla(229, 64%, 66%, 0.1);
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 1rem 1rem 1.5rem hsla(229, 64%, 66%, 0.1),
+    -1rem 1rem 1.5rem hsla(229, 64%, 66%, 0.1);
 }
 
 .card-1 {
@@ -125,9 +122,9 @@ header {
 .card-top-border {
   width: 100%;
   position: absolute;
-  top: -.45rem;
+  top: -0.45rem;
   border: 1rem solid transparent;
-  border-radius: .9rem;
+  border-radius: 0.9rem;
   z-index: -1;
 }
 
@@ -144,7 +141,7 @@ header {
 }
 
 .card-4 .card-top-border {
- border-color: hsl(212, 86%, 64%);
+  border-color: hsl(212, 86%, 64%);
 }
 
 /* ==========
@@ -159,13 +156,11 @@ img {
   padding-right: 2.9rem;
 }
 
-
 /* ==========
   @MEDIA QUERIES
 ========== */
 
-@media screen and (min-width:1200px) {
-
+@media screen and (min-width: 1200px) {
   /* ==========
     @MEDIA QUERIES - TYPOGRAPHY
   ========== */
@@ -177,13 +172,13 @@ img {
   .header-title {
     width: 25%;
     font-size: 3.4rem;
-    letter-spacing: .1rem;
-    margin: -.4rem auto;
+    letter-spacing: 0.1rem;
+    margin: -0.4rem auto;
   }
 
   .header-description {
     width: 28%;
-    letter-spacing: .01rem;
+    letter-spacing: 0.01rem;
     margin: 2rem auto;
   }
 
@@ -237,7 +232,6 @@ img {
     margin-top: 3.4rem;
   }
 
-
   /* ==========
     @MEDIA QUERIES - COMPONENTS
   ========== */
@@ -247,3 +241,4 @@ img {
     margin-top: 4rem;
     margin-left: 25/5rem;
   }
+}
