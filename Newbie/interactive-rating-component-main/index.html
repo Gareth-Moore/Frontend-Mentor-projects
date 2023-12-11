@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
-  <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="stylesheet" href="css/main.css">
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <main class="card-container">
+      <!-- first card -->
+      <article class="first-card">
+        <div class="star-container">
+          <img src="images/icon-star.svg" alt="Star rating icon" />
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul class="rating-scale">
+          <li><button class="ratings-button" value="1">1</button></li>
+          <li><button class="ratings-button" value="2">2</button></li>
+          <li><button class="ratings-button" value="3">3</button></li>
+          <li><button class="ratings-button" value="4">4</button></li>
+          <li><button class="ratings-button" value="5">5</button></li>
+        </ul>
+        <form class="submit-button">
+          <button type="submit">SUBMIT</button>
+        </form>
+        <div class="error-message hidden">
+          <ion-icon name="alert-circle-outline"></ion-icon>
+          <span> Please select a rating.</span>
+        </div>
+      </article>
 
-  <main class="card-container">
-    <!-- first card -->
-    <article class="first-card">
-      <div class="star-container">
-        <img src="images/icon-star.svg" alt="Star rating icon">
-      </div>
-      <h1>
-        How did we do?
-      </h1>
-      <p>
-        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
-      </p>
-      <ul class="rating-scale">
-        <li><button class="ratings-button" value="1">1</button></li>
-        <li><button class="ratings-button" value="2">2</button></li>
-        <li><button class="ratings-button" value="3">3</button></li>
-        <li><button class="ratings-button" value="4">4</button></li>
-        <li><button class="ratings-button" value="5">5</button></li>
-      </ul>
-      <form class="submit-button">
-        <button type="submit">SUBMIT</button>
-      </form>
-      <div class="error-message hidden">
-        <ion-icon name="alert-circle-outline"></ion-icon>
-        <span> Please select a rating.</span>
-      </div>
-    </article>
+      <!-- second card -->
+      <article class="second-card hidden">
+        <img
+          src="images/illustration-thank-you.svg"
+          alt="Card payment decorative image"
+        />
+        <p class="rating-result">You selected # out of 5</p>
+        <h1>Thank you!</h1>
+        <p class="thank-you-message">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </article>
+    </main>
 
-    <!-- second card -->
-    <article class="second-card hidden">
-      <img src="images/illustration-thank-you.svg" alt="Card payment decorative image">
-      <p class="rating-result">You selected # out of 5</p>
-      <h1>Thank you!</h1>
-      <p class="thank-you-message">
-        We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
-      </p>
-    </article>
-  </main>
-    
-  <!-- developer links -->
-  <nav>
-    <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/rate-my-rating-card-js-html-and-css-loads-of-patience-rJ6ByNufhC">Frontend Mentor</a>
-    <a href="../../../index.html" class="my-projects">My Projects</a>
-    <a href="https://github.com/Gareth-Moore/Frontend-Mentor-projects/tree/master/Newbie/With%20JS/interactive-rating-component-main" class="my-code">My Code</a>
-  </nav>
+    <!-- developer links -->
+    <nav>
+      <a
+        href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/rate-my-rating-card-js-html-and-css-loads-of-patience-rJ6ByNufhC"
+        >Frontend Mentor</a
+      >
+      <a href="../../../index.html" class="my-projects">My Projects</a>
+      <a
+        href="https://github.com/Gareth-Moore/Frontend-Mentor-projects/tree/master/Newbie/interactive-rating-component-main"
+        class="my-code"
+        >My Code</a
+      >
+    </nav>
 
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

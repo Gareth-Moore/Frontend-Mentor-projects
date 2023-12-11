@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- developer links -->
+    <nav>
+      <a
+        href="https://www.frontendmentor.io/solutions/oh-lord-its-javascript-time-00-flexbox-makes-an-appearance-too-ug276oCU2c"
+        >Frontend Mentor</a
+      >
+      <a href="../../../index.html" class="my-projects">My Projects</a>
+      <a
+        href="https://github.com/Gareth-Moore/Frontend-Mentor-projects/tree/master/Newbie/base-apparel-coming-soon-master"
+        class="my-code"
+        >My Code</a
+      >
+    </nav>
 
-  <!-- developer links -->
-  <nav>
-    <a href="https://www.frontendmentor.io/solutions/oh-lord-its-javascript-time-00-flexbox-makes-an-appearance-too-ug276oCU2c">Frontend Mentor</a>
-    <a href="../../../index.html" class="my-projects">My Projects</a>
-    <a href="https://github.com/Gareth-Moore/Frontend-Mentor-projects/tree/master/Newbie/With%20JS/base-apparel-coming-soon-master" class="my-code">My Code</a>
-  </nav>
+    <!-- start here -->
+    <main>
+      <div class="hero">
+        <img
+          class="logo"
+          src="images/logo.svg"
+          alt="Image of Base Apparel logo"
+        />
+        <div class="hero-img-mobile"></div>
 
-  <!-- start here -->
-  <main>
-    <div class="hero">
-
-      <img class="logo" src="images/logo.svg" alt="Image of Base Apparel logo">
-      <div class="hero-img-mobile"></div>
-
-      <div class="hero-text">
-        <h1>
-          <span class="span-1">WE'RE</span>
-          <span class="span-2">COMING</span>
-          <span class="span-3">SOON</span>
-        </h1>
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
-        </p>
-        <form class="hero-input" onsubmit="checkEmail(); return false">
-          <input type="email" placeholder="Email Address">
-          <button type="submit" aria-label="submit"></button>
-          <img id="error-icon" src="images/icon-error.svg" alt="">
-          <p id="error-message">Please provide a valid email</p>
-        </form>
+        <div class="hero-text">
+          <h1>
+            <span class="span-1">WE'RE</span>
+            <span class="span-2">COMING</span>
+            <span class="span-3">SOON</span>
+          </h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form class="hero-input" onsubmit="checkEmail(); return false">
+            <input type="email" placeholder="Email Address" />
+            <button type="submit" aria-label="submit"></button>
+            <img id="error-icon" src="images/icon-error.svg" alt="" />
+            <p id="error-message">Please provide a valid email</p>
+          </form>
+        </div>
       </div>
+      <div class="hero-img-desktop"></div>
+    </main>
 
-    </div>
-    <div class="hero-img-desktop"></div>
-  </main>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
