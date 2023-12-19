@@ -21,6 +21,9 @@
           <div class="input-group">
             <label for="day">DAY</label
             ><input type="number" placeholder="DD" name="day" id="dayInput" />
+            <p id="day-error-message" class="error-message">
+              Must be a valid date
+            </p>
           </div>
           <div class="input-group">
             <label for="">MONTH</label
@@ -30,15 +33,21 @@
               name="month"
               id="monthInput"
             />
+            <p id="month-error-message" class="error-message">
+              Must be a valid date
+            </p>
           </div>
           <div class="input-group">
-            <label for="">YEAR</label
-            ><input
+            <label for="year">YEAR</label>
+            <input
               type="number"
               placeholder="YYYY"
               name="year"
-              id="yearInput"
+              id="inputYear"
             />
+            <p id="year-error-message" class="error-message">
+              Must be a valid date
+            </p>
           </div>
         </div>
         <div class="submit-divider">
@@ -59,5 +68,5 @@
       </div>
     </main>
   </body>
-  <script src="main.js"></script>
+  <script src="main.js" type="module"></script>
 </html>

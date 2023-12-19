@@ -1,4 +1,4 @@
-@import url("/fonts.css");
+@import url("./fonts.css");
 *,
 *::after,
 *::before {
@@ -99,19 +99,14 @@ input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
 
-form {
-}
-
 .input-fields {
-  max-width: 335px;
+  max-width: 315px;
   display: flex;
-  flex-grow: 1;
   gap: 1rem;
 }
 
-.input-group input,
-.input-group label {
-  display: block;
+.input-group {
+  max-width: 33%;
 }
 
 .input-group label {
@@ -145,9 +140,16 @@ form {
 
 .result-item {
   margin: 0;
-  margin-bottom: -1.2rem;
+  margin-bottom: 0;
 }
 
 .result-data {
   color: var(--accent-light);
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-size: 0.55rem;
+  margin-top: 0.3rem;
 }

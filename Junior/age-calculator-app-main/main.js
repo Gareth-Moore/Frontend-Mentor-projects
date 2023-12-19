@@ -1,39 +1,54 @@
-const resultItem = document.querySelectorAll(".result-data");
+import { ageDifferenceCalculater } from "./ageDifferenceCalculater.js";
+
 const form = document.querySelector("form");
+const errorMessages = document.querySelectorAll(".error-message");
+const results = document.querySelectorAll(".result-data"); // [day, month, year]
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const userDay = parseInt(e.target[0].value);
-  const userMonth = parseInt(e.target[1].value);
-  const userYear = parseInt(e.target[2].value);
-  const daysInMonthIndex = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  const inputDay = parseInt(e.target[0].value);
+  const inputMonth = parseInt(e.target[1].value);
+  const inputYear = parseInt(e.target[2].value);
 
-  // make userMonth the starting month in the array
-  const daysInMonth = [
-    ...daysInMonthIndex.slice(userMonth - 1),
-    ...daysInMonthIndex.slice(0, userMonth - 1),
-  ];
+  if (
+    inputDay <= 31 &&
+    inputDay >= 1 &&
+    inputMonth <= 12 &&
+    inputMonth >= 1 &&
+    inputYear <= 2023
+  ) {
+    errorMessageDisplay("none");
 
-  let days =
-    (new Date() - new Date(`${userMonth}-${userDay}-${userYear}`)) / 86400000; // miliseconds to days
-  let daysRemainder = days % 365.25;
-  let months = 0; // assigned in for loop
+    const ageDifference = ageDifferenceCalculater(
+      inputDay,
+      inputMonth,
+      inputYear
+    );
 
-  for (let i = 0; i < 12; i++) {
-    if (daysRemainder - daysInMonth[i] <= 0) {
-      months = i;
-      break;
-    } else {
-      daysRemainder -= daysInMonth[i];
+    // update results
+    results[0].innerHTML = ageDifference.days;
+    results[1].innerHTML = ageDifference.months;
+    results[2].innerHTML = ageDifference.years;
+  }
+  // error handling
+  else {
+    errorMessageDisplay("block");
+
+    if (inputDay <= 31 && inputDay >= 1) {
+      document.getElementById("day-error-message").style.display = "none";
+    }
+    if (inputMonth <= 12 && inputMonth >= 1) {
+      document.getElementById("month-error-message").style.display = "none";
+    }
+    if (inputYear <= 2023) {
+      document.getElementById("year-error-message").style.display = "none";
     }
   }
-
-  // update results
-  document.querySelector('[data-results="years"]').innerHTML = Math.floor(
-    days / 365.25
-  );
-  document.querySelector('[data-results="months"]').innerHTML = months;
-  document.querySelector('[data-results="days"]').innerHTML =
-    Math.floor(daysRemainder);
 });
+
+function errorMessageDisplay(value) {
+  errorMessages.forEach((element) => {
+    element.style.display = `${value}`;
+  });
+}
